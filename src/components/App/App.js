@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   addTrick = (newTrick) => {
-    this.setState({ tricks: [...this.state.tricks], newTrick })
+    this.setState({ tricks: [...this.state.tricks, newTrick] })
   }
 
   render() {
