@@ -4,12 +4,17 @@ class Form extends Component {
   constructor() {
     super()
     this.state = {
-
+      stance: '',
+      name: '',
+      obstacle: '',
+      tutorial: ''
     }
   }
 
   render() {
+    return (
 
+    )
   }
 }
 
