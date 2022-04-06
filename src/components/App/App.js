@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import fetchAPI from '../../apiCalls.js'
 import './App.css';
 
 class App extends Component {
