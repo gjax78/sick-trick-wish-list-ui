@@ -12,10 +12,19 @@ class App extends Component {
     }
   }
 
+  componentDidMount() {
+    fetchAPI.getAllTricks()
+    .then(data => {
+      {console.log(data)}
+      this.setState({ tricks: data })
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <h1>Sick Trick Wish List</h1>
+        <Tricks />
       </div>
     );
   }
