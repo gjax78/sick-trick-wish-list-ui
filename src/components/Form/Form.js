@@ -18,14 +18,14 @@ class Form extends Component {
   render() {
     return (
       <form>
+{
+      // <select value={this.state.stance} onChange={event => this.handleChange(event)}>
+      //   <option value='choose'>Choose your stance:</option>
+      //   <option value={this.state.stance}>Regular</option>
+      //   <option value={this.state.stance}>Switch</option>
+      // </select>
+    }
 
-        <input
-          type='text'
-          placeholder='stance'
-          name='stance'
-          value={this.state.stance}
-          onChange={event => this.handleChange(event)}
-        />
 
         <input
           type='text'
@@ -51,7 +51,7 @@ class Form extends Component {
           name='tutorial'
           value={this.state.tutorial}
           onChange={event => this.handleChange(event)}
-          
+
         />
 
         <button>SEND IT</button>
