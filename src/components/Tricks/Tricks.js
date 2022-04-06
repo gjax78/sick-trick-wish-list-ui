@@ -1,8 +1,18 @@
 import React from 'react'
 
-const Tricks = () => {
+const Tricks = ({ tricks }) => {
+  const trickCards = tricks.map(trick => {
+    return (
+      <TrickCard
+      
+      />
+    )
+  })
+
   return (
-    <h1>Tricks go hurrrr</h1>
+    <div className='tricks-container'>
+      {trickCards}
+    </div>
   )
 }
 
