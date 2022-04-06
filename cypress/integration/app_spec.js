@@ -25,4 +25,10 @@ describe('App renders', () => {
     cy.visit('http://localhost:3000')
       .contains('regular frontside 50-50, backside 180 out')
   })
+
+  it('As a user, I should be able to add a new trick to the DOM', () => {
+    cy.visit('http://localhost:3000')
+      .get('button')
+        .click()
+  })
 });
