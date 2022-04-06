@@ -16,4 +16,13 @@ describe('App renders', () => {
     cy.get('input[name="tutorial"]')
       .type('text')
   })
+
+  it('should be able to display the three existing tricks from the API', () => {
+    cy.visit('http://localhost:3000')
+      .contains('regular treflip')
+    cy.visit('http://localhost:3000')
+      .contains('switch heelflip')
+    cy.visit('http://localhost:3000')
+      .contains('regular frontside 50-50, backside 180 out')
+  })
 });
