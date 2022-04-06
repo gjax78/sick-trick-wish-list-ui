@@ -11,6 +11,10 @@ class Form extends Component {
     }
   }
 
+  handleChange = (event) => {
+    this.setState({ [event.target.name]: event.target.value })
+  }
+
   render() {
     return (
       <form>
@@ -20,6 +24,7 @@ class Form extends Component {
           placeholder='stance'
           name='stance'
           value={this.state.stance}
+          onChange={event => this.handleChange(event)}
         />
 
         <input
@@ -27,6 +32,8 @@ class Form extends Component {
           placeholder='name'
           name='name'
           value={this.state.name}
+          onChange={event => this.handleChange(event)}
+
         />
 
         <input
@@ -34,6 +41,8 @@ class Form extends Component {
           placeholder='obstacle'
           name='obstacle'
           value={this.state.obstacle}
+          onChange={event => this.handleChange(event)}
+
         />
 
         <input
@@ -41,6 +50,8 @@ class Form extends Component {
           placeholder='tutorial'
           name='tutorial'
           value={this.state.tutorial}
+          onChange={event => this.handleChange(event)}
+          
         />
 
         <button>SEND IT</button>
