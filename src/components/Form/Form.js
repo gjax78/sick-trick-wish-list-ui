@@ -25,7 +25,14 @@ class Form extends Component {
       //   <option value={this.state.stance}>Switch</option>
       // </select>
     }
+        <input
+          type='text'
+          placeholder='stance'
+          name='stance'
+          value={this.state.stance}
+          onChange={event => this.handleChange(event)}
 
+        />
 
         <input
           type='text'
