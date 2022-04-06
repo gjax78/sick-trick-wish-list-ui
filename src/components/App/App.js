@@ -3,6 +3,13 @@ import fetchAPI from '../../apiCalls.js'
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      
+    }
+  }
+
   render() {
     return (
       <div className="App">
