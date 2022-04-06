@@ -5,10 +5,9 @@ const TrickCard = ({ stance, name, obstacle, tutorial, id }) => {
     <div className='trick-card'>
       <h1>Trick Card</h1>
       <h3>{name}</h3>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
+      <p>{stance}</p>
+      <p>{obstacle}</p>
+      <p>{tutorial}</p>
     </div>
   )
 }
