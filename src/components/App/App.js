@@ -13,16 +13,21 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
+  fetchAllTricks = () => {
     fetchAPI.getAllTricks()
     .then(data => {
-      {console.log(data)}
       this.setState({ tricks: data })
     })
   }
 
+  componentDidMount() {
+    this.fetchAllTricks()
+
+  }
+
   addTrick = (newTrick) => {
-    this.setState({ tricks: [...this.state.tricks, newTrick] })
+    fetchAPI.postNewTricks(newTrick)
+    .then(() => this.fetchAllTricks())
   }
 
   render() {

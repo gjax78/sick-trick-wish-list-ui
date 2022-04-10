@@ -1,0 +1,46 @@
+form {
+  font-size: 18px;
+}
+
+.stance {
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  width: 175px;
+  height: 30px;
+}
+
+.name{
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+  width: 175px;
+  height: 30px;
+
+}
+
+.obstacle {
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  width: 175px;
+  height: 30px;
+}
+
+.tutorial {
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+  width: 175px;
+  height: 30px;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  width: 75px;
+  height: 30px;
+}
